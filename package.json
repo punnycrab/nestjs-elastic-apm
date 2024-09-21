@@ -1,0 +1,33 @@
+{
+  "name": "elastic-apm-nestjs",
+  "version": "1.0.2",
+  "description": "A NestJS module for integrating Elastic APM.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Punny Crab",
+  "license": "MIT",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es6",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "dependencies": {
+    "@nestjs/common": "^10.4.3",
+    "elastic-apm-node": "^4.7.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
